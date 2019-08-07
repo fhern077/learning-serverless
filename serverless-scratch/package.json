@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "serverless-http": "^2.0.2",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "build": "yarn tsc",
+    "dev": "sls offline start --port 4500",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "serverless-offline": "^3.20.2",
+    "supertest": "^3.0.0"
+  }
+}
