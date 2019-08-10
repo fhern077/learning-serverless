@@ -1,10 +1,17 @@
 {
   "compilerOptions": {
     "lib": ["es2017"],
+    "module": "commonjs",
     "moduleResolution": "node",
+    "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
     "target": "es2017",
     "outDir": "./dist"
   },

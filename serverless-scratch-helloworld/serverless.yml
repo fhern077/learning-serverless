@@ -1,0 +1,16 @@
+service: serverless
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  profile: default
+  region: us-east-1
+  stage: dev
+
+plugins:
+  - serverless-offline
+
+# targets the outputted javascript from the typescript compilation
+functions:
+  helloworld:
+    handler: dist/helloworld.handler

@@ -4,7 +4,8 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "build": "yarn tsc",
+    "build": "rimraf dist && yarn tsc",
+    "invoke": "serverless  invoke local -f helloworld",
     "dev": "sls offline start --port 4500",
     "test": "jest"
   },
