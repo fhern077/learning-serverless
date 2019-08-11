@@ -3,7 +3,7 @@ service: serverless
 provider:
   name: aws
   runtime: nodejs8.10
-  profile: default
+  profile: personal
   region: us-east-1
   stage: dev
 

@@ -34,3 +34,21 @@ serverless  invoke local -f hello
 mkdir serverless-scratch && cd mkdir serverless-scratch/src
 cd serverless-scratch/src && touch event.json && touch helloworld.ts
 ```
+
+## Notes
+
+**Sync Vs Async Lambdas**
+
+* You will have to use Synchronous execution if you want to get a return response directly from the lambda this makes
+sense in an http req-res context.
+
+* Not so much if you're lambda is just updating a dynamoDB table or uploading to s3
+in those scenarios you most likely want to execute async and just get a callback when the event is done.
+
+**Event Types**
+
+*
+
+*
+
+
