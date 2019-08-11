@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "serverless-http": "^2.0.2"
+  },
+  "scripts": {
+    "build": "rm -rf dist/ && yarn tsc",
+    "invoke": "serverless invoke local -f helloworld --path dist/event.json",
+    "dev": "sls offline start --port 4500",
+    "reinstall": "rm -rf node_modules && yarn install --force",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.1",
+    "jest": "^22.4.3",
+    "serverless-offline": "^3.20.2",
+    "supertest": "^3.0.0",
+    "typescript": "^3.5.3"
+  }
+}

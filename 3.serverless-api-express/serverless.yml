@@ -1,0 +1,19 @@
+service: serverless-express-todo
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  profile: personal
+  region: us-east-1
+  stage: dev
+
+plugins:
+  - serverless-offline
+
+# targets the outputted javascript from the typescript compilation
+functions:
+  api:
+    handler: dist/api/api.handler
+    events:
+      - http: ANY /api
+      - http: "ANY {param+}"
