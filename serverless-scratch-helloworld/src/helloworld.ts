@@ -11,5 +11,5 @@
  *
  */
 export const handler: any = async (_event: any, _context: any, done: any) => {
-  done(null, `👋  🌏`);
+  done(null, _event);
 };

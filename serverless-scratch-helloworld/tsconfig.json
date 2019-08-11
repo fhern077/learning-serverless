@@ -13,7 +13,9 @@
     "strictPropertyInitialization": true,
     "alwaysStrict": true,
     "target": "es2017",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "resolveJsonModule": true
   },
+  "include": ["src/**/*", "src/**/*.json"],
   "exclude": ["node_modules"]
 }
