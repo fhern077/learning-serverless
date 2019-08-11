@@ -48,5 +48,19 @@ sense in an http req-res context.
 * Not so much if you're lambda is just updating a dynamoDB table or uploading to s3
 in those scenarios you most likely want to execute async and just get a callback when the event is done.
 
+**Serverless**
+Break out projects by service name
+
+provider specifies information about the deployment context
+        ```
+          provider:
+          name: aws
+          runtime: nodejs8.10
+          profile: personal
+          region: us-east-1
+          stage: dev
+        ```
+
+
 
 
