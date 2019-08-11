@@ -1,0 +1,31 @@
+service: serverless
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  profile: personal
+  region: us-east-1
+  stage: dev
+
+plugins:
+  - serverless-offline
+
+# targets the outputted javascript from the typescript compilation
+functions:
+  api:
+    handler: dist/api/api.handler
+    events:
+      - http: GET /api
+  todos:
+    handler: dist/api/todos.handler
+    events:
+      - http: GET /todos
+  todo:
+    handler: dist/api/todo.handler
+    events:
+      - http:
+          path: /todo/{id}
+          method: GET
+          request:
+            parameters:
+              id: true

@@ -1,4 +1,4 @@
-# Learning Serverless
+# Learning Serverless w/AWS Lambdas λ
 
 This repo is meant to highlight how to create and deploy serverless functions in this case λ aws-lambda functions using node & typescript.
 
@@ -9,7 +9,10 @@ This repo is meant to highlight how to create and deploy serverless functions in
 ## Helpful commands Using Serverless CLI
 
 ### Install AWS CLI & Setup
+Sign Up for free Tier: https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc
+
 https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html
+
 https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
 
 ### Serverless Post-Requisites
@@ -45,10 +48,5 @@ sense in an http req-res context.
 * Not so much if you're lambda is just updating a dynamoDB table or uploading to s3
 in those scenarios you most likely want to execute async and just get a callback when the event is done.
 
-**Event Types**
-
-*
-
-*
 
 

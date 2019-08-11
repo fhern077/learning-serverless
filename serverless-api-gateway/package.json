@@ -4,7 +4,7 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "build": "rm -rf dist/ dist && yarn tsc",
+    "build": "rm -rf dist/ && yarn tsc",
     "invoke": "serverless invoke local -f helloworld --path dist/event.json",
     "dev": "sls offline start --port 4500",
     "reinstall": "rm -rf node_modules && yarn install --force",
