@@ -13,7 +13,7 @@ plugins:
 # targets the outputted javascript from the typescript compilation
 functions:
   api:
-    handler: dist/api/api.handler
+    handler: dist/index.handler
     events:
-      - http: ANY /api
-      - http: "ANY {param+}"
+      - http: ANY /
+      - http: "ANY {param*}"
