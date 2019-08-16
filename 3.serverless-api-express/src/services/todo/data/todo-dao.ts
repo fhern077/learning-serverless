@@ -47,3 +47,5 @@ class TodoDataAccess {
     return httpResponseResult;
   }
 }
+
+export default TodoDataAccess;

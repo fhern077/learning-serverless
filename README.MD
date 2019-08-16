@@ -52,14 +52,14 @@ in those scenarios you most likely want to execute async and just get a callback
 Break out projects by service name
 
 provider specifies information about the deployment context
-        ```
-          provider:
-          name: aws
-          runtime: nodejs8.10
-          profile: personal
-          region: us-east-1
-          stage: dev
-        ```
+  ```
+    provider:
+    name: aws
+    runtime: nodejs8.10
+    profile: personal
+    region: us-east-1
+    stage: dev
+  ```
 
 
 
